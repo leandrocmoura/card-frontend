@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.button-container {
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end; 
+  margin-top: 10px; 
+}
+
+#scroll-1 {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden auto;
+  user-select: none;
+  padding-right: 17px;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+}
+
+
+.container {
+  display: block;
+  position: absolute;
+  width: 1419px; 
+  height: 1721px; 
+  padding: 20px; 
+}
+
+.new-card-button {
+  position: absolute;
+  top: 20px; 
+  left: 20px; 
+  margin-bottom: 20px; 
+}
+
+.card {
+border: 1px solid #ccc;
+border-radius: 10px;
+padding: 15px;
+margin-bottom: 10px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+max-width: 400px; 
+}
+
+.card-title {
+font-weight: bold;
+margin-right: auto;
+}
+
+.card-image {
+max-width: 100px;
+max-height: 100px;
+object-fit: cover;
+}
+
+.card-image-container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0; 
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-list{
+margin-top: 20px;
+}
+
+.card-actions {
+display: flex;
+gap: 10px;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 20px;
+}
+
+input[type="text"] {
+top: 147px;
+left: 168px;
+width: 1046px;
+height: 75px;
+background: #FFFFFF;
+border-radius: 8px;
+}
+
+.modal-box {
+padding: 20px;
+background-color: #FFFFFF;
+border-radius: 10px;
+width: 300px;
+margin: 100px auto;
+text-align: center;
+}
+
+button {
+margin-top: 10px;
+}
+
+.overlay {
+  position: fixed; 
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); 
+  z-index: 1000; 
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
